@@ -8,8 +8,10 @@ group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
-jar {
-	archiveName("application.jar")
+tasks {
+	bootJar {
+		archiveFileName.set("app.jar")
+	}
 }
 
 configurations {
