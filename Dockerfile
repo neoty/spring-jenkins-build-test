@@ -4,4 +4,3 @@ ARG JAR_FILE=build/libs/application.jar
 ADD ${JAR_FILE} ${JAR_FILE}
 
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","${JAR_FILE}"]
-
