@@ -1,4 +1,4 @@
-FROM adoptopenjdk:jre-11.0.11_9-alpine
+FROM adoptopenjdk/openjdk11:alpine-jre
 #FROM amazoncorretto:11.0.14
 EXPOSE 8080
 
