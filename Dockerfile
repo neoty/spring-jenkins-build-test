@@ -1,7 +1,8 @@
-FROM adoptopenjdk/openjdk11:alpine-jre
-#FROM amazoncorretto:11.0.14
+FROM arm64v8/adoptopenjdk:11-jre
+
 EXPOSE 8080
 
 ADD build/libs/*.jar /app.jar
 
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+
